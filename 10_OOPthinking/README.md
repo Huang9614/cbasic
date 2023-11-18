@@ -32,4 +32,7 @@
 - 可以用来将一句话拆分成多个单独的单词
 
 ## 10.2.13 
+- `s.find(string，index)` 函数用于寻找s中第一个string的，at or from the index
+- `string::npos` 是string类的方法`.find()`的返回值，如果没有找到满足要求的substring，就会返回该值
+- `s.replace(position, oldSubStr.length(), newSubStr())` 在`position`处，将长度为`oldSubStr.length()`的部分替换成`newSubStr`
 
