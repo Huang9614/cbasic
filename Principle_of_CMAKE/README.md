@@ -51,6 +51,7 @@ Compared to the building library steps, it's replaced easily by the following co
 2. `add_executable(main main.cpp)` corresponds to `c++ -std=c++17 main.cpp`
 3. `target_link_libraries(main tools)` corresponds to `-L . -ltools -o main`
 
+
 ## build process using CMAKE
 
 The build process is completely defined in `CMakeLists.txt` and childrens `src/CMakeLists.txt`
