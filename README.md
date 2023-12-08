@@ -1,3 +1,6 @@
+# 和本地文件夹 D/c++ 链接
+2023.12.08
+
 # 《C++ Primer Plus 6th》
 
 ## `Queue::Node::Node( const Item& i) : item(i), next(0) {}` 
