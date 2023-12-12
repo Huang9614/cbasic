@@ -63,5 +63,9 @@
 ### `ros::init(argc, argv, "talker");` 
 这里的域操作符是用来命名空间 `ros` 
 
+### `std_msgs::String msg;` 
+在 `String,h` 文件中定义了命名空间 `std_msgs`，并且在该命名空间中，定义了一个模板结构体 `String`，它包含一个成员 data，是一个使用 `ContainerAllocator` 进行内存分配的 `std::basic_string` 对象
+- `String_():data()  {}` 结构的默认构造函数
+- `String_(const ContainerAllocator& _alloc) : data(_alloc) {}` 带有参数的构造函数，接受一个 `ContainerAllocator` 对象作为参数，然后用它来构造 `data` 成员
 
 
