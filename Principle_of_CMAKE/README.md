@@ -65,6 +65,13 @@ make
 ```
 
 ## `CMakeLists.txt`
+1. `add_executable(target_name source1.cpp source2.cpp ...)`：用于定义生成一个可执行文件的目标。`target_name` 是可执行文件的名称，后面跟着源文件的列表。
+2. `add_library(lib_name source1.cpp source2.cpp ...)`：用于定义生成一个库文件的目标。`lib_name` 是库的名称，后面跟着源文件的列表。
+3. `add_link_libraries(target_name library1 library2 ...)`：用于将库文件链接到可执行文件。`target_name` 是你通过 `add_executable` 定义的目标名称，后面跟着要链接的库的名称。
+4. `add_dependencies(target_name dependency1 dependency2 ...)`：用于定义目标之间的依赖关系。`target_name` 是目标的名称，后面跟着它依赖的其他目标的名称
+5. `target_link_libraries(target_name library1 library2 ...)`：用于将库文件链接到目标（可执行文件或库）。`target_name` 是目标的名称，后面跟着要链接的库的名称
+   - `target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})` 在CMake中，`${}` 是用于引用变量的语法。在这里，${catkin_LIBRARIES} 是一个变量，它包含了由Catkin构建系统生成的与当前工程及其依赖关系相关的库文件路径。
+
 
 ## Clean the build
 ```bash
